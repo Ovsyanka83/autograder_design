@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <button onclick="location.href = 'index.html';">Index</button>
+    <div style="width: 50%;">
+        <label for="testcases">Testcases:</label>
+        <select name="testcases" id="testcases" style="font-size: 64%">
+            <option>Test1.c</option>
+            <option>Test2.c</option>
+            <option>Test3.c</option>
+            <option>Test4.c</option>
+            <option>Test5.c</option>
+        </select>
+        </br>
+        <label for="testcase_code">Testcase code:</label>
+        </br>
+        <textarea style="float: left" id="testcase_code" name="testcase_code" rows="20" cols="50"></textarea>
+    </div>
+    <div style="margin-left: 50%; width: 50%; height:200px; border:1px solid #000;">
+        <p>Testcase Configuration:</p>
+        <div class="scrollable_config">
+            Max runtime: <input type=number step=any value="1" style="width: 80px;" /> seconds<br />
+            <input type="checkbox" />Field1<br />
+            <input type="checkbox" checked="true" />Field2<br />
+            <input type="checkbox" checked="true" />Field3<br />
+            <input type="checkbox" checked="true" />Field4<br />
+            <input type="checkbox" checked="true" />Field5<br />
+
+        </div>
+    </div>
+
+    <button class="bottom-right" onclick="location.href = 'grading-configuration.html';">Grading
+        Configuration</button>
+</body>
+
+</html>
